@@ -1,0 +1,27 @@
+.main-header {
+  padding-top: 30px;
+}
+
+.main-header__container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.main-header__logo {
+  height: 44px;
+  margin-right: auto;
+}
+
+.main-header__contacts-link {
+  display: block;
+  margin-left: 20px;
+  color: $color-default-white;
+  font-family: $ff-alumni-sans;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0.03em;
+  z-index: 2;
+}

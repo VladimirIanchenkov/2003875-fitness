@@ -16,7 +16,7 @@ const sprite = () =>
 
 const optimizeSvg = () =>
   gulp
-      .src('build/img/**/*.svg')
+      .src(['build/img/**/*.svg', '!source/favicon/**'])
       .pipe(
           imagemin([
             svgo({
@@ -44,7 +44,7 @@ const optimizeJpg = () =>
 
 const optimizePng = () =>
   gulp
-      .src('build/img/**/*.png')
+      .src(['build/img/**/*.png', '!source/favicon/**'])
       .pipe(
           imagemin([
             pngQuant({
@@ -67,7 +67,7 @@ const optimizePng = () =>
 */
 
 const createWebp = () => {
-  const root = '';
+  const root = 'content/';
   return gulp
       .src(`source/img/${root}**/*.{png,jpg}`)
       .pipe(webp({quality: 90}))

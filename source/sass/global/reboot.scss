@@ -13,11 +13,13 @@ body {
 
 html {
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   font-size: $fz-default;
   line-height: 24px;
-  font-family: $ff-placeholder;
-  color: $color-default-black;
+  font-family: $ff-roboto-condensed;
+  color: $color-sapphire;
+  word-break: break-word;
+  scroll-behavior: smooth;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -35,8 +37,10 @@ body {
 }
 
 a {
-  color: $color-default-black;
+  color: $color-sapphire;
   text-decoration: none;
+  cursor: pointer;
+  user-select: none;
 }
 
 img,
@@ -126,4 +130,5 @@ button,
 [type="reset"],
 [type="submit"] {
   appearance: none;
+  user-select: none;
 }

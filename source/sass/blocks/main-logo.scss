@@ -1,0 +1,17 @@
+.main-logo {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+
+  &--disabled {
+    pointer-events: none;
+  }
+
+  @include hover-focus {
+    opacity: 0.6;
+  }
+
+  @include active {
+    opacity: 0.8;
+  }
+}

@@ -19,6 +19,7 @@
 }
 
 @mixin active {
+  &:active,
   &.focus-visible:active {
     @content;
   }
@@ -32,6 +33,25 @@
   }
 
   &.focus-visible:focus {
+    @content;
+  }
+}
+
+@mixin hover-focus-mobile {
+  @media (hover: hover) {
+    &:hover {
+      @content;
+    }
+  }
+
+  &:focus,
+  &.focus-visible:focus {
+    @content;
+  }
+}
+
+@mixin disabled {
+  &:disabled {
     @content;
   }
 }
