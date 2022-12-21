@@ -110,74 +110,79 @@
           <div class="season-tickets__container container">
             <h2>Абонементы</h2>
 
-            <div class="season-tickets__tab tab">
-              <button class="tab__link" onclick="openTicket(event, 'one-month')" id="defaultOpen">1 месяц</button>
-              <button class="tab__link" onclick="openTicket(event, 'six-months')">6 месяцев</button>
-              <button class="tab__link" onclick="openTicket(event, 'twelve-months')">12 месяцев</button>
+            <div class="tab">
+              <div class="tab__head">
+                <button class="tab__link" data-tab="one-month">1 месяц</button>
+                <button class="tab__link" data-tab="six-months">6 месяцев</button>
+                <button class="tab__link" data-tab="twelve-months">12 месяцев</button>
+              </div>
+
+              <div class="tab__body">
+                <ul class="tab__content-list" data-tab="one-month">
+                  <li class="tab__item-card">
+                    <h3>С тренером</h3>
+                    <p>12 занятий</p>
+                    <p id="5000">5000 <span>&#8381;</span></p>
+                    <a href="#" class="button">Купить абонемент</a>
+                  </li>
+                  <li class="tab__item-card">
+                    <h3>Дневной</h3>
+                    <p>с 8:00 до 17:00</p>
+                    <p id="1700">1700 <span>&#8381;</span></p>
+                    <a href="#" class="button">Купить абонемент</a>
+                  </li>
+                  <li class="tab__item-card">
+                    <h3>Полный день</h3>
+                    <p>с 8:00 до 22:00</p>
+                    <p id="2700">2700 <span>&#8381;</span></p>
+                    <a href="#" class="button">Купить абонемент</a>
+                  </li>
+                </ul>
+
+                <ul class="tab__content-list" data-tab="six-months">
+                  <li class="tab__item-card">
+                    <h3>С тренером</h3>
+                    <p>72 занятия</p>
+                    <p id="27000">27000 <span>&#8381;</span></p>
+                    <a href="#" class="button">Купить абонемент</a>
+                  </li>
+                  <li class="tab__item-card">
+                    <h3>Дневной</h3>
+                    <p>с 8:00 до 17:00</p>
+                    <p id="9000">9000 <span>&#8381;</span></p>
+                    <a href="#" class="button">Купить абонемент</a>
+                  </li>
+                  <li class="tab__item-card">
+                    <h3>Полный день</h3>
+                    <p>с 8:00 до 22:00</p>
+                    <p id="14500">14500 <span>&#8381;</span></p>
+                    <a href="#" class="button">Купить абонемент</a>
+                  </li>
+                </ul>
+
+                <ul class="tab__content-list" data-tab="twelve-months">
+                  <li class="tab__item-card">
+                    <h3>С тренером</h3>
+                    <p>144 занятия</p>
+                    <p id="48000">48000 <span>&#8381;</span></p>
+                    <a href="#" class="button">Купить абонемент</a>
+                  </li>
+                  <li class="tab__item-card">
+                    <h3>Дневной</h3>
+                    <p>с 8:00 до 17:00</p>
+                    <p id="16300">16300 <span>&#8381;</span></p>
+                    <a href="#" class="button">Купить абонемент</a>
+                  </li>
+                  <li class="tab__item-card">
+                    <h3>Полный день</h3>
+                    <p>с 8:00 до 22:00</p>
+                    <p id="26000">26000 <span>&#8381;</span></p>
+                    <a href="#" class="button">Купить абонемент</a>
+                  </li>
+                </ul>
+              </div>
             </div>
 
-            <ul id="one-month" class="tab__content">
-              <li class="tab__card">
-                <h3>С тренером</h3>
-                <span>12 занятий</span>
-                <span>5000 &#8381;</span>
-                <a href="#" class="button">Купить абонемент</a>
-              </li>
-              <li class="tab__card">
-                <h3>Дневной</h3>
-                <span>с 8:00 до 17:00</span>
-                <span>1700 &#8381;</span>
-                <a href="#" class="button">Купить абонемент</a>
-              </li>
-              <li class="tab__card">
-                <h3>Полный день</h3>
-                <span>с 8:00 до 22:00</span>
-                <span>2700 &#8381;</span>
-                <a href="#" class="button">Купить абонемент</a>
-              </li>
-            </ul>
-
-            <ul id="six-months" class="tab__content">
-              <li class="tab__card">
-                <h3>С тренером</h3>
-                <span>72 занятия</span>
-                <span>27000 &#8381;</span>
-                <a href="#" class="button">Купить абонемент</a>
-              </li>
-              <li class="tab__card">
-                <h3>Дневной</h3>
-                <span>с 8:00 до 17:00</span>
-                <span>9000 &#8381;</span>
-                <a href="#" class="button">Купить абонемент</a>
-              </li>
-              <li class="tab__card">
-                <h3>Полный день</h3>
-                <span>с 8:00 до 22:00</span>
-                <span>14500 &#8381;</span>
-                <a href="#" class="button">Купить абонемент</a>
-              </li>
-            </ul>
-
-            <ul id="twelve-months" class="tab__content">
-              <li class="tab__card">
-                <h3>С тренером</h3>
-                <span>144 занятия</span>
-                <span>48000 &#8381;</span>
-                <a href="#" class="button">Купить абонемент</a>
-              </li>
-              <li class="tab__card">
-                <h3>Дневной</h3>
-                <span>с 8:00 до 17:00</span>
-                <span>16300 &#8381;</span>
-                <a href="#" class="button">Купить абонемент</a>
-              </li>
-              <li class="tab__card">
-                <h3>Полный день</h3>
-                <span>с 8:00 до 22:00</span>
-                <span>26000 &#8381;</span>
-                <a href="#" class="button">Купить абонемент</a>
-              </li>
-            </ul>
           </div>
         </section>
 
