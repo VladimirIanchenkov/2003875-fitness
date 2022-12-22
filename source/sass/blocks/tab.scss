@@ -89,13 +89,13 @@
   @include vp-767 {
     gap: 33px;
   }
+}
 
-  &--active {
-    display: grid;
+.tab__body .tab__content-list--active {
+  display: grid;
 
-    @include vp-1199 {
-      display: flex;
-    }
+  @include vp-1199 {
+    display: flex;
   }
 }
 
@@ -104,20 +104,20 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 57px 20px 68px;
+  padding: 50px 20px 62px;
   background-color: $color-default-white;
   text-align: center;
   aspect-ratio: 360 / 448;
   border: 7px solid transparent;
 
   @include vp-1199 {
-    padding: 55px 20px 68px;
+    padding-top: 48px;
     width: 65%;
     aspect-ratio: 442 / 448;
   }
 
   @include vp-767 {
-    padding: 50px 20px 55px;
+    padding: 43px 20px 48px;
     width: 100%;
     aspect-ratio: 290 / 384;
   }
@@ -205,4 +205,12 @@
   letter-spacing: 0.05em;
   border-width: 2px;
   z-index: 2;
+
+  @include vp-1199 {
+    width: 54%;
+  }
+
+  @include vp-767 {
+    width: 88%;
+  }
 }

@@ -87,8 +87,8 @@
               <img class="gym__image gym__image--desktop" src="img/content/gym-desktop.jpg" srcset="img/content/gym-desktop@2x.jpg" width="660" height="401" alt="Современный светлый тренажерный зал.">
             </picture>
             <picture>
-              <source type="image/webp" srcset="img/content//gym-tablet.webp 1x, img/content//gym-tablet@2x.webp 2x">
-              <img class="gym__image gym__image--tablet" src="img/content/gym-tablet.jpg" srcset="img/content//gym-tablet@2x.jpg" width="678" height="345" alt="Современный светлый тренажерный зал.">
+              <source type="image/webp" srcset="img/content/gym-tablet.webp 1x, img/content/gym-tablet@2x.webp 2x">
+              <img class="gym__image gym__image--tablet" src="img/content/gym-tablet.jpg" srcset="img/content/gym-tablet@2x.jpg" width="678" height="345" alt="Современный светлый тренажерный зал.">
             </picture>
             <picture>
               <source type="image/webp" srcset="img/content/gym-mobile.webp 1x, img/content/gym-mobile@2x.webp 2x">
@@ -109,16 +109,14 @@
         <section class="season-tickets" id="season-tickets">
           <div class="season-tickets__container container">
             <h2>Абонементы</h2>
-
             <div class="tab">
               <div class="tab__head">
-                <button class="tab__link" data-tab="one-month">1 месяц</button>
+                <button class="tab__link tab__link--active" data-tab="one-month">1 месяц</button>
                 <button class="tab__link" data-tab="six-months">6 месяцев</button>
                 <button class="tab__link" data-tab="twelve-months">12 месяцев</button>
               </div>
-
               <div class="tab__body">
-                <ul class="tab__content-list" data-tab="one-month">
+                <ul class="tab__content-list tab__content-list--active" data-tab="one-month">
                   <li class="tab__item-card">
                     <h3>С тренером</h3>
                     <p>12 занятий</p>
@@ -138,7 +136,6 @@
                     <a href="#" class="button">Купить абонемент</a>
                   </li>
                 </ul>
-
                 <ul class="tab__content-list" data-tab="six-months">
                   <li class="tab__item-card">
                     <h3>С тренером</h3>
@@ -159,7 +156,6 @@
                     <a href="#" class="button">Купить абонемент</a>
                   </li>
                 </ul>
-
                 <ul class="tab__content-list" data-tab="twelve-months">
                   <li class="tab__item-card">
                     <h3>С тренером</h3>
@@ -182,32 +178,55 @@
                 </ul>
               </div>
             </div>
-
           </div>
         </section>
 
         <section class="competition">
           <div class="competition__container container">
-            <h2>Super games</h2>
-            <table>
-              <tr>
-                <td>Дата</td>
-              </tr>
-              <tr>
-                <td>7</td>
-                <td>марта 2019</td>
-              </tr>
-            </table>
-            <table>
-              <tr>
-                <td>Время</td>
-              </tr>
-              <tr>
-                <td>12:00</td>
-              </tr>
-            </table>
-            <p>Ежегодные соревнования по&nbsp;CrossFit</p>
-            <a href="#" class="button">Заполнить заявку</a>
+            <div class="competition__container-inner">
+              <div class="competition__title-container">
+                <h2>Super<br>
+                  games</h2>
+                <div class="competition__table-container">
+                  <table class="competition__table competition__table--date">
+                    <tr>
+                      <td colspan="2">Дата</td>
+                    </tr>
+                    <tr>
+                      <td rowspan="2">7</td>
+                      <td>Марта</td>
+                    </tr>
+                    <tr>
+                      <td>2019</td>
+                    </tr>
+                  </table>
+                  <table class="competition__table competition__table--time">
+                    <tr>
+                      <td>Время</td>
+                    </tr>
+                    <tr>
+                      <td>12:00</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <p>Ежегодные соревнования по&nbsp;CrossFit</p>
+              <a href="#" class="button">Заполнить заявку</a>
+            </div>
+            <div class="competition__image-container">
+              <picture>
+                <source type="image/webp" srcset="img/content/competition-guy-desktop.webp 1x, img/content/competition-guy-desktop@2x.webp 2x">
+                <img class="competition__image competition__image--desktop" src="img/content/competition-guy-desktop.jpg" srcset="img/content/competition-guy-desktop@2x.jpg" width="660" height="500" alt="Спортсмен в облаке талька.">
+              </picture>
+              <picture>
+                <source type="image/webp" srcset="img/content/competition-guy-tablet.webp 1x, img/content/competition-guy-tablet@2x.webp 2x">
+                <img class="competition__image competition__image--tablet" src="img/content/competition-guy-tablet.jpg" srcset="img/content/competition-guy-tablet@2x.jpg" width="386" height="292" alt="Спортсмен в облаке талька.">
+              </picture>
+              <picture>
+                <source type="image/webp" srcset="img/content/competition-guy-mobile.webp 1x, img/content/competition-guy-mobile@2x.webp 2x">
+                <img class="competition__image competition__image--mobile" src="img/content/competition-guy-mobile.jpg" srcset="img/content/competition-guy-mobile@2x.jpg" width="290" height="292" alt="Спортсмен в облаке талька.">
+              </picture>
+            </div>
           </div>
         </section>
 
