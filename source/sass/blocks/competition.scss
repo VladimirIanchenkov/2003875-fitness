@@ -104,7 +104,7 @@
   border-bottom: 1px solid #ffffff;
 }
 
-.competition__table--date tr:nth-of-type(2) > td:first-child,
+.competition__table--date tr:nth-of-type(2n) > td:first-child,
 .competition__table--time tr:last-of-type > td {
   font-size: 40px;
   line-height: 40px;
@@ -120,7 +120,7 @@
   }
 }
 
-.competition__table--date tr:nth-of-type(2) > td:last-child,
+.competition__table--date tr:nth-of-type(2n) > td:last-child,
 .competition__table--date tr:last-of-type > td {
   font-size: 14px;
   line-height: 19px;

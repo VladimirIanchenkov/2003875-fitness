@@ -445,7 +445,9 @@
             <ul class="sales__list">
               <li class="sales__item-card sales__item-card--special">
                 <div class="sales__item-card-title-container">
-                  <h3>Год <br><span>4999</span></h3>
+                  <h3>Год<br>
+                    <span>4999</span>
+                  </h3>
                   <p>Безлимитный абонемент<br>
                     в&nbsp;тренажерный зал</p>
                   <a href="#">Подробнее</a>
@@ -482,39 +484,37 @@
         <section class="reviews">
           <div class="reviews__container container">
             <h2>Отзывы</h2>
-            <div id="carousel" class="reviews__carousel carousel">
-              <button class="carousel__button carousel__button--prev" type="button">
-                <span class="visually-hidden">Назад</span>
-                <svg width="16" height="32" fill="#afafaf">
-                  <use href="./img/sprite.svg#icon-slider-prev"></use>
-                </svg>
-              </button>
-              <div class="carousel__gallery">
-                <ul class="carousel__list">
-                  <li class="carousel__card">
-                    <picture>
-                      <source type="image/webp" srcset="img/content/review-author-photo-1.webp 1x, img/content/review-author-photo-1@2x.webp 2x">
-                      <img class="reviews__image" src="img/content/review-author-photo-1.png" srcset="img/content/review-author-photo-1@2x.jpg" width="80" height="80" alt="Фото автора отзыва.">
-                    </picture>
+            <div class="reviews__carousel-container">
+              <div class="reviews__carousel reviews__carousel--nojs swiper">
+                <div class="reviews__wrapper swiper-wrapper">
+                  <div class="reviews__card swiper-slide">
+                    <div class="reviews__card-image-conatiner">
+                      <picture>
+                        <source type="image/webp" srcset="img/content/review-author-photo-1.webp 1x, img/content/review-author-photo-1@2x.webp 2x">
+                        <img class="reviews__card-image" src="img/content/review-author-photo-1.png" srcset="img/content/review-author-photo-1@2x.jpg" width="80" height="80" alt="Фото автора отзыва.">
+                      </picture>
+                    </div>
                     <h3>Анна Орлова</h3>
                     <p>&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
-                  </li>
-                  <li class="carousel__card">
-                    <picture>
-                      <source type="image/webp" srcset="img/content/review-author-photo-1.webp 1x, img/content/review-author-photo-1@2x.webp 2x">
-                      <img class="reviews__image" src="img/content/review-author-photo-1.png" srcset="img/content/review-author-photo-1@2x.jpg" width="80" height="80" alt="Фото автора отзыва.">
-                    </picture>
+                  </div>
+                  <div class="reviews__card swiper-slide">
+                    <div class="reviews__card-image-conatiner">
+                      <picture>
+                        <source type="image/webp" srcset="img/content/review-author-photo-1.webp 1x, img/content/review-author-photo-1@2x.webp 2x">
+                        <img class="reviews__card-image" src="img/content/review-author-photo-1.png" srcset="img/content/review-author-photo-1@2x.jpg" width="80" height="80" alt="Фото автора отзыва.">
+                      </picture>
+                    </div>
                     <h3>Анна Орлова</h3>
                     <p>&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
-                  </li>
-                </ul>
+                  </div>
+                </div>
               </div>
-              <button class="carousel__button carousel__button--next" type="button">
+              <div class="reviews__carousel-button reviews__carousel-button--prev swiper-button-prev">
                 <span class="visually-hidden">Назад</span>
-                <svg width="16" height="32" fill="#afafaf">
-                  <use href="./img/sprite.svg#icon-slider-next"></use>
-                </svg>
-              </button>
+              </div>
+              <div class="reviews__carousel-button reviews__carousel-button--next swiper-button-next">
+                <span class="visually-hidden">Вперед</span>
+              </div>
             </div>
           </div>
         </section>
@@ -522,13 +522,13 @@
         <section class="contacts">
           <div class="contacts__container container">
             <h2 class="visually-hidden">Наши контакты</h2>
-            <form class="free-class" action="https://echo.htmlacademy.ru" method="post" autocomplete="off">
+            <form class="contacts__form" action="https://echo.htmlacademy.ru" method="post" autocomplete="off">
               <fieldset>
-                <legend class="free-class__title">бесплатное занятие</legend>
-                <label class="free-class__form-field">
+                <legend class="contacts__form-title">Бесплатное занятие</legend>
+                <label class="contacts__form-field">
                   <input type="text" id="name" name="name" placeholder="Имя" pattern="^[A-Za-zА-Яа-яЁё].*" title="Первый символ - буква" minlength="1" maxlength="25" required>
                 </label>
-                <label class="free-class__form-field">
+                <label class="contacts__form-field">
                   <input type="tel" id="tel" name="telephone-number" placeholder="Телефон" pattern="[^A-Za-zА-Яа-яЁё]*" title="Номер не дожен содержать букв" required>
                 </label>
               </fieldset>
@@ -536,22 +536,23 @@
             </form>
 
             <address>
-              <ul class="contacts__list">
-                <li class="contacts__item">
-                  <h3>Адрес:</h3>
+              <h3>Контакты</h3>
+              <ul class="contacts__list-addess">
+                <li class="contacts__item-addess contacts__item-addess--address">
+                  <h4>Адрес:</h4>
                   <p>г. Омск, ул. 60 лет Октября, 7</p>
                 </li>
-                <li class="contacts__item">
-                  <h3>График работы:</h3>
+                <li class="contacts__item-addess contacts__item-addess--phone">
+                  <h4>Телефон:</h4>
+                  <a href="tel:+78005555555">8-800-555-55-55</a>
+                </li>
+                <li class="contacts__item-addess contacts__item-addess--schedule">
+                  <h4>График работы:</h4>
                   <p>Пн-Вс: с 8:00 до 22:00</p>
                 </li>
-                <li class="contacts__item">
-                  <h3>Телефон:</h3>
-                  <p>8-800-555-55-55</p>
-                </li>
-                <li class="contacts__item">
-                  <h3>Email:</h3>
-                  <p>omsk@supergym.ru</p>
+                <li class="contacts__item-addess contacts__item-addess--email">
+                  <h4>Email:</h4>
+                  <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
                 </li>
               </ul>
             </address>

@@ -3,3 +3,4 @@ source/js/vendor/*.js
 gulpfile.js
 webpack.config.cjs
 source/js/modules/init-slider.js
+source/js/modules/init-carousel.js

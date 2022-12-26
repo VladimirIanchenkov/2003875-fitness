@@ -1,0 +1,285 @@
+.contacts__container {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include vp-1199 {
+    flex-direction: column;
+  }
+}
+
+.contacts__form {
+  position: relative;
+  width: 50%;
+  padding: 66px 14% 64px 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: calc(100% + 103px);
+    background-color: $color-sapphire;
+    z-index: -1;
+
+    @include vp-1199 {
+      width: 100vw;
+      left: -45px;
+    }
+
+    @include vp-767 {
+      left: -15px;
+    }
+  }
+
+  @include vp-1199 {
+    width: 100%;
+    padding: 62px 17% 68px 13%;
+  }
+
+  @include vp-767 {
+    padding: 62px 0 68px 0;
+  }
+}
+
+.contacts__form fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.contacts__form-title {
+  font-family: $ff-alumni-sans;
+  font-size: 54px;
+  line-height: 64px;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  margin-bottom: 33px;
+  color: $color-default-white;
+
+  @include vp-1199 {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 50px;
+    margin-bottom: 37px;
+  }
+
+  @include vp-767 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 40px;
+  }
+}
+
+.contacts__form-field input,
+.contacts__form-field input::placeholder {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $color-default-white;
+  padding-bottom: 5px;
+}
+
+.contacts__form-field input {
+  display: inline-block;
+  vertical-align: middle;
+  width: 45%;
+  border: none;
+  border-bottom: 1px solid #74819c;
+  margin-bottom: 30px;
+  background: none;
+
+  @include vp-1199 {
+    width: 43%;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    margin-bottom: 38px;
+  }
+}
+
+.contacts__form-field:not(:last-of-type) {
+  margin-right: 25px;
+
+  @include vp-1199 {
+    margin-right: 57px;
+  }
+
+  @include vp-767 {
+    margin-right: 0;
+  }
+}
+
+.contacts__form button {
+  width: 100%;
+  border: 3px solid $color-default-white;
+  padding: 16px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: $color-default-white;
+  background: none;
+}
+
+.contacts__form button:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+
+.contacts address {
+  position: relative;
+  width: 50%;
+  padding: 59px 0 64px 11%;
+  font-style: normal;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1px;
+    width: calc(100% + 103px);
+    background-color: #74819c;
+
+    @include vp-1199 {
+      display: none;
+    }
+  }
+
+  @include vp-1199 {
+    width: 100%;
+    padding: 63px 9% 65px 13%;
+  }
+
+  @include vp-767 {
+    padding: 64px 0 61px 0;
+  }
+}
+
+.contacts address > h3 {
+  font-family: $ff-alumni-sans;
+  font-size: 54px;
+  line-height: 64px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  margin: 0;
+  margin-bottom: 37px;
+  margin-left: -7px;
+
+  @include vp-1199 {
+    font-size: 42px;
+    line-height: 50px;
+    margin-bottom: 33px;
+    margin-left: 0;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
+
+.contacts__list-addess {
+  display: grid;
+  position: relative;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 16px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 7px;
+    height: 90%;
+    width: 1px;
+    background-color: #74819c;
+
+    @include vp-767 {
+      display: none;
+    }
+  }
+
+  @include vp-1199 {
+    row-gap: 23px;
+  }
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.contacts__item-addess:nth-of-type(2n) {
+  padding-left: 60px;
+
+  @include vp-1199 {
+    padding-left: 50px;
+  }
+
+  @include vp-767 {
+    padding-left: 0;
+  }
+}
+
+.contacts__item-addess {
+  @include vp-767 {
+    &--address {
+      order: 1;
+    }
+
+    &--schedule {
+      order: 2;
+    }
+
+    &--phone {
+      order: 3;
+    }
+
+    &--email {
+      order: 4;
+    }
+  }
+}
+
+.contacts__item-addess h4 {
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 2px;
+
+  @include vp-1199 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 4px;
+  }
+}
+
+.contacts__item-addess p,
+.contacts__item-addess a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  margin: 0;
+
+  @include vp-1199 {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+
+.contacts__item-addess a {
+  @include hover-focus {
+    color: #ed0233;
+  }
+
+  @include active {
+    opacity: 0.6;
+  }
+}

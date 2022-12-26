@@ -2,15 +2,15 @@ const sliderContainer = document.querySelector('.coaches__slider-container');
 
 sliderContainer.classList.remove('coaches__slider-container--nojs');
 
-const initSlider = new Swiper('.swiper', {
+const initSlider = new Swiper('.coaches__slider', {
   loop: true,
   loopedSlides: 8,
   slidesPerView: 'auto',
   slidesPerGroup: 1,
   slidesPerGroupAuto: true,
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.coaches__button--next',
+    prevEl: '.coaches__button--prev',
   },
   breakpoints: {
     320: {
