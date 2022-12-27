@@ -136,11 +136,10 @@
   margin-bottom: 20px;
 }
 
-.contacts address {
+.contacts__address {
   position: relative;
   width: 50%;
   padding: 59px 0 63px 11%;
-  font-style: normal;
 
   &::before {
     content: "";
@@ -166,7 +165,7 @@
   }
 }
 
-.contacts address > h3 {
+.contacts__address > h3 {
   font-family: $ff-alumni-sans;
   font-size: 54px;
   line-height: 64px;
@@ -189,7 +188,7 @@
   }
 }
 
-.contacts__list-addess {
+.contacts__list-address {
   display: grid;
   position: relative;
   grid-template-columns: 1fr 1fr;
@@ -222,7 +221,7 @@
   }
 }
 
-.contacts__item-addess:nth-of-type(2n) {
+.contacts__item-address:nth-of-type(2n) {
   padding-left: 60px;
 
   @include vp-1199 {
@@ -234,7 +233,7 @@
   }
 }
 
-.contacts__item-addess {
+.contacts__item-address {
   @include vp-767 {
     &--address {
       order: 1;
@@ -254,10 +253,12 @@
   }
 }
 
-.contacts__item-addess h4 {
+.contacts__item-address span {
+  display: block;
   font-weight: 700;
   margin: 0;
   margin-bottom: 2px;
+  font-style: normal;
 
   @include vp-1199 {
     font-size: 20px;
@@ -269,12 +270,13 @@
   }
 }
 
-.contacts__item-addess p,
-.contacts__item-addess a {
+.contacts__item-address p,
+.contacts__item-address a {
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   margin: 0;
+  font-style: normal;
 
   @include vp-1199 {
     font-size: 18px;
@@ -282,7 +284,7 @@
   }
 }
 
-.contacts__item-addess a {
+.contacts__item-address a {
   @include hover-focus {
     color: #ed0233;
   }
