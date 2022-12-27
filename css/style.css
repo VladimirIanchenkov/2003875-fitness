@@ -2915,7 +2915,7 @@ button,
   right: 0;
   top: 0;
   height: 100%;
-  width: calc(100% + 103px);
+  width: 50vw;
   background-color: #102654;
   z-index: -1;
 }
@@ -3043,7 +3043,7 @@ button,
   top: 0;
   left: 0;
   height: 1px;
-  width: calc(100% + 103px);
+  width: 50vw;
   background-color: #74819c;
 }
 
