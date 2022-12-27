@@ -1989,6 +1989,7 @@ button,
 .gym__video-player {
   width: 100%;
   height: 100%;
+  border: none;
 }
 
 .season-tickets {
@@ -2597,19 +2598,15 @@ button,
   text-transform: lowercase;
 }
 
-.advantages__item-card--special > span,
-.advantages__item-card--special > span + span {
-  color: #ffffff;
-  background: none;
+.advantages__item-card h3 {
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 10px;
 }
 
-.advantages__item-card--special > span {
-  font-size: 74px;
-  line-height: 74px;
-  margin-bottom: 8px;
-}
-
-.advantages__item-card--special > span + h3 {
+.advantages__item-card--special h3 {
   font-size: 26px;
   line-height: 26px;
   font-weight: 700;
@@ -2618,12 +2615,13 @@ button,
   text-transform: capitalize;
 }
 
-.advantages__item-card h3 {
-  font-size: 22px;
-  line-height: 22px;
-  font-weight: 700;
-  margin: 0;
-  margin-bottom: 10px;
+.advantages__item-card--special h3 > span {
+  display: block;
+  font-size: 74px;
+  line-height: 74px;
+  margin-bottom: 8px;
+  color: #ffffff;
+  background: none;
 }
 
 .advantages__item-card p {
@@ -3033,14 +3031,13 @@ button,
   margin-bottom: 20px;
 }
 
-.contacts address {
+.contacts__address {
   position: relative;
   width: 50%;
   padding: 59px 0 63px 11%;
-  font-style: normal;
 }
 
-.contacts address::before {
+.contacts__address::before {
   content: "";
   position: absolute;
   top: 0;
@@ -3050,7 +3047,7 @@ button,
   background-color: #74819c;
 }
 
-.contacts address > h3 {
+.contacts__address > h3 {
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 54px;
   line-height: 64px;
@@ -3061,7 +3058,7 @@ button,
   margin-left: -7px;
 }
 
-.contacts__list-addess {
+.contacts__list-address {
   display: -ms-grid;
   display: grid;
   position: relative;
@@ -3073,7 +3070,7 @@ button,
   margin: 0;
 }
 
-.contacts__list-addess::before {
+.contacts__list-address::before {
   content: "";
   position: absolute;
   left: 50%;
@@ -3083,30 +3080,33 @@ button,
   background-color: #74819c;
 }
 
-.contacts__item-addess:nth-of-type(2n) {
+.contacts__item-address:nth-of-type(2n) {
   padding-left: 60px;
 }
 
-.contacts__item-addess h4 {
+.contacts__item-address span {
+  display: block;
   font-weight: 700;
   margin: 0;
   margin-bottom: 2px;
+  font-style: normal;
 }
 
-.contacts__item-addess p,
-.contacts__item-addess a {
+.contacts__item-address p,
+.contacts__item-address a {
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   margin: 0;
+  font-style: normal;
 }
 
-.contacts__item-addess a.focus-visible:focus {
+.contacts__item-address a.focus-visible:focus {
   color: #ed0233;
 }
 
-.contacts__item-addess a:active,
-.contacts__item-addess a.focus-visible:active {
+.contacts__item-address a:active,
+.contacts__item-address a.focus-visible:active {
   opacity: 0.6;
 }
 
@@ -3647,22 +3647,22 @@ button,
     margin-top: -10px;
   }
 
-  .advantages__item-card--special > span {
-    font-size: 74px;
-    line-height: 74px;
-    margin-bottom: 0;
+  .advantages__item-card h3 {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0;
   }
 
-  .advantages__item-card--special > span + h3 {
+  .advantages__item-card--special h3 {
     font-size: 22px;
     line-height: 33px;
     margin-bottom: 12px;
   }
 
-  .advantages__item-card h3 {
-    font-size: 20px;
-    line-height: 30px;
-    margin: 0;
+  .advantages__item-card--special h3 > span {
+    font-size: 74px;
+    line-height: 74px;
+    margin-bottom: 0;
   }
 
   .advantages__item-card p > br {
@@ -3757,37 +3757,37 @@ button,
     margin-right: 57px;
   }
 
-  .contacts address::before {
+  .contacts__address::before {
     display: none;
   }
 
-  .contacts address {
+  .contacts__address {
     width: 100%;
     padding: 63px 9% 65px 13%;
   }
 
-  .contacts address > h3 {
+  .contacts__address > h3 {
     font-size: 42px;
     line-height: 50px;
     margin-bottom: 33px;
     margin-left: 0;
   }
 
-  .contacts__list-addess {
+  .contacts__list-address {
     row-gap: 23px;
   }
 
-  .contacts__item-addess:nth-of-type(2n) {
+  .contacts__item-address:nth-of-type(2n) {
     padding-left: 50px;
   }
 
-  .contacts__item-addess h4 {
+  .contacts__item-address span {
     font-size: 20px;
     line-height: 30px;
   }
 
-  .contacts__item-addess p,
-  .contacts__item-addess a {
+  .contacts__item-address p,
+  .contacts__item-address a {
     font-size: 18px;
     line-height: 27px;
   }
@@ -4181,9 +4181,12 @@ button,
     max-width: unset;
   }
 
-  .advantages__item-card--special > span + h3 {
-    margin-top: -14px;
+  .advantages__item-card--special h3 {
     margin-bottom: 0;
+  }
+
+  .advantages__item-card--special h3 > span {
+    line-height: 70px;
   }
 
   .advantages__item-card p {
@@ -4349,20 +4352,20 @@ button,
     margin-right: 0;
   }
 
-  .contacts address {
+  .contacts__address {
     padding: 64px 0 61px 0;
   }
 
-  .contacts address > h3 {
+  .contacts__address > h3 {
     font-size: 32px;
     line-height: 38px;
   }
 
-  .contacts__list-addess::before {
+  .contacts__list-address::before {
     display: none;
   }
 
-  .contacts__list-addess {
+  .contacts__list-address {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4372,35 +4375,35 @@ button,
     flex-direction: column;
   }
 
-  .contacts__item-addess:nth-of-type(2n) {
+  .contacts__item-address:nth-of-type(2n) {
     padding-left: 0;
   }
 
-  .contacts__item-addess--address {
+  .contacts__item-address--address {
     -webkit-box-ordinal-group: 2;
     -ms-flex-order: 1;
     order: 1;
   }
 
-  .contacts__item-addess--schedule {
+  .contacts__item-address--schedule {
     -webkit-box-ordinal-group: 3;
     -ms-flex-order: 2;
     order: 2;
   }
 
-  .contacts__item-addess--phone {
+  .contacts__item-address--phone {
     -webkit-box-ordinal-group: 4;
     -ms-flex-order: 3;
     order: 3;
   }
 
-  .contacts__item-addess--email {
+  .contacts__item-address--email {
     -webkit-box-ordinal-group: 5;
     -ms-flex-order: 4;
     order: 4;
   }
 
-  .contacts__item-addess h4 {
+  .contacts__item-address span {
     margin-bottom: 4px;
   }
 
@@ -4556,7 +4559,7 @@ button,
     color: #ed0233;
   }
 
-  .contacts__item-addess a:hover:not(.focus-visible) {
+  .contacts__item-address a:hover:not(.focus-visible) {
     color: #ed0233;
   }
 
