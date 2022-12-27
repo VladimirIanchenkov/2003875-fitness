@@ -18,7 +18,7 @@
     right: 0;
     top: 0;
     height: 100%;
-    width: calc(100% + 103px);
+    width: 50vw;
     background-color: $color-sapphire;
     z-index: -1;
 
@@ -147,7 +147,7 @@
     top: 0;
     left: 0;
     height: 1px;
-    width: calc(100% + 103px);
+    width: 50vw;
     background-color: #74819c;
 
     @include vp-1199 {
