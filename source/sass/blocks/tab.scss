@@ -13,7 +13,6 @@
   margin: 0 auto 36px;
 
   @include vp-1199 {
-    width: 332px;
     margin-bottom: 45px;
   }
 
@@ -75,6 +74,14 @@
 
 .tab__link:not(:last-of-type) {
   margin-right: 46px;
+
+  @include vp-1199 {
+    margin-right: 54px;
+  }
+
+  @include vp-767 {
+    margin-right: auto;
+  }
 }
 
 .tab__content-list {

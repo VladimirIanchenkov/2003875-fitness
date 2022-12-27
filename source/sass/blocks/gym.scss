@@ -208,13 +208,21 @@
   width: 100%;
   height: 100%;
   z-index: 2;
-  background-image: url("../img/content/gym-video-poster.jpg");
+  background-image: url("../img/gym-video-poster-desktop.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 
   @include retina {
-    background-image: url("../img/content/gym-video-poster@2x.jpg");
+    background-image: url("../img/gym-video-poster-desktop@2x.jpg");
+  }
+
+  @include vp-767 {
+    background-image: url("../img/gym-video-poster-mobile.jpg");
+
+    @include retina {
+      background-image: url("../img/gym-video-poster-mobile@2x.jpg");
+    }
   }
 }
 
@@ -231,6 +239,16 @@
 
     @include active {
       opacity: 0.6;
+    }
+  }
+
+  @include vp-1199 {
+    width: 73px;
+    height: 73px;
+
+    svg {
+      width: 73px;
+      height: 73px;
     }
   }
 }
