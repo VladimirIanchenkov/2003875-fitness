@@ -46,7 +46,13 @@
   }
 }
 
-.main-header__contacts-link {
+.main-header__contacts-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.main-header__contacts-container a {
   display: block;
   margin-left: 20px;
   color: $color-default-white;
@@ -56,6 +62,14 @@
   line-height: 32px;
   letter-spacing: 0.03em;
   z-index: 2;
+
+  @include hover-focus {
+    opacity: 0.8;
+  }
+
+  @include active {
+    opacity: 0.6;
+  }
 
   @include vp-1199 {
     font-size: 24px;

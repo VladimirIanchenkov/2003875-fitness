@@ -8,8 +8,8 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
-  width: 340px;
+  justify-content: center;
+  width: fit-content;
   margin: 0 auto 36px;
 
   @include vp-1199 {
@@ -73,6 +73,10 @@
   }
 }
 
+.tab__link:not(:last-of-type) {
+  margin-right: 46px;
+}
+
 .tab__content-list {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 40px;
@@ -109,6 +113,10 @@
   text-align: center;
   aspect-ratio: 360 / 448;
   border: 7px solid transparent;
+
+  &:focus-visible {
+    outline: none;
+  }
 
   @include vp-1199 {
     padding-top: 48px;

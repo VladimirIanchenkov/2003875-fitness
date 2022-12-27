@@ -190,6 +190,14 @@
   margin-bottom: 20px;
 }
 
+.intro__image-container {
+  padding-right: 170px;
+
+  @include vp-1199 {
+    padding: 0;
+  }
+}
+
 .intro__image {
   aspect-ratio: 500 / 556;
   margin-top: -23px;

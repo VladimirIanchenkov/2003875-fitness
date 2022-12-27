@@ -90,6 +90,14 @@
   margin-bottom: 30px;
   background: none;
 
+  @include disabled {
+    pointer-events: none;
+
+    &::placeholder {
+      color: #606060;
+    }
+  }
+
   @include vp-1199 {
     width: 43%;
   }
@@ -131,7 +139,7 @@
 .contacts address {
   position: relative;
   width: 50%;
-  padding: 59px 0 64px 11%;
+  padding: 59px 0 63px 11%;
   font-style: normal;
 
   &::before {

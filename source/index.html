@@ -28,7 +28,9 @@
               <use href="./img/sprite.svg#logo-main"></use>
             </svg>
           </a>
-          <a class="main-header__contacts-link" href="tel:+78005555555">8-800-555-55-55</a>
+          <div class="main-header__contacts-container">
+            <a href="tel:+78005555555">8-800-555-55-55</a>
+          </div>
         </div>
       </header>
 
@@ -56,14 +58,16 @@
               <span>Омск</span>
               <a href="#season-tickets" class="button">Купить абонемент</a>
             </div>
-            <picture>
-              <source type="image/webp" srcset="img/content/fitness-guy-desktop.webp 1x, img/content/fitness-guy-desktop@2x.webp 2x">
-              <img class="intro__image intro__image--desktop" src="img/content/fitness-guy-desktop.jpg" srcset="img/content/fitness-guy-desktop@2x.jpg" width="500" height="556" alt="Культурист в майке Супермена.">
-            </picture>
-            <picture>
-              <source type="image/webp" srcset="img/content/fitness-guy-tablet.webp 1x, img/content/fitness-guy-tablet@2x.webp 2x">
-              <img class="intro__image intro__image--tablet" src="img/content/fitness-guy-tablet.jpg" srcset="img/content/fitness-guy-tablet@2x.jpg" width="324" height="390" alt="Культурист в майке Супермена.">
-            </picture>
+            <div class="intro__image-container">
+              <picture>
+                <source type="image/webp" srcset="img/content/fitness-guy-desktop.webp 1x, img/content/fitness-guy-desktop@2x.webp 2x">
+                <img class="intro__image intro__image--desktop" src="img/content/fitness-guy-desktop.jpg" srcset="img/content/fitness-guy-desktop@2x.jpg" width="500" height="556" alt="Культурист в майке Супермена.">
+              </picture>
+              <picture>
+                <source type="image/webp" srcset="img/content/fitness-guy-tablet.webp 1x, img/content/fitness-guy-tablet@2x.webp 2x">
+                <img class="intro__image intro__image--tablet" src="img/content/fitness-guy-tablet.jpg" srcset="img/content/fitness-guy-tablet@2x.jpg" width="324" height="390" alt="Культурист в майке Супермена.">
+              </picture>
+            </div>
           </div>
         </section>
 
@@ -117,19 +121,19 @@
               </div>
               <div class="tab__body">
                 <ul class="tab__content-list tab__content-list--active" data-tab="one-month">
-                  <li class="tab__item-card">
+                  <li class="tab__item-card" tabindex="0">
                     <h3>С тренером</h3>
                     <p>12 занятий</p>
                     <p id="5000">5000 <span>&#8381;</span></p>
                     <a href="#" class="button">Купить абонемент</a>
                   </li>
-                  <li class="tab__item-card">
+                  <li class="tab__item-card" tabindex="0">
                     <h3>Дневной</h3>
                     <p>с 8:00 до 17:00</p>
                     <p id="1700">1700 <span>&#8381;</span></p>
                     <a href="#" class="button">Купить абонемент</a>
                   </li>
-                  <li class="tab__item-card">
+                  <li class="tab__item-card" tabindex="0">
                     <h3>Полный день</h3>
                     <p>с 8:00 до 22:00</p>
                     <p id="2700">2700 <span>&#8381;</span></p>
@@ -137,19 +141,19 @@
                   </li>
                 </ul>
                 <ul class="tab__content-list" data-tab="six-months">
-                  <li class="tab__item-card">
+                  <li class="tab__item-card" tabindex="0">
                     <h3>С тренером</h3>
                     <p>72 занятия</p>
                     <p id="27000">27000 <span>&#8381;</span></p>
                     <a href="#" class="button">Купить абонемент</a>
                   </li>
-                  <li class="tab__item-card">
+                  <li class="tab__item-card" tabindex="0">
                     <h3>Дневной</h3>
                     <p>с 8:00 до 17:00</p>
                     <p id="9000">9000 <span>&#8381;</span></p>
                     <a href="#" class="button">Купить абонемент</a>
                   </li>
-                  <li class="tab__item-card">
+                  <li class="tab__item-card" tabindex="0">
                     <h3>Полный день</h3>
                     <p>с 8:00 до 22:00</p>
                     <p id="14500">14500 <span>&#8381;</span></p>
@@ -157,19 +161,19 @@
                   </li>
                 </ul>
                 <ul class="tab__content-list" data-tab="twelve-months">
-                  <li class="tab__item-card">
+                  <li class="tab__item-card" tabindex="0">
                     <h3>С тренером</h3>
                     <p>144 занятия</p>
                     <p id="48000">48000 <span>&#8381;</span></p>
                     <a href="#" class="button">Купить абонемент</a>
                   </li>
-                  <li class="tab__item-card">
+                  <li class="tab__item-card" tabindex="0">
                     <h3>Дневной</h3>
                     <p>с 8:00 до 17:00</p>
                     <p id="16300">16300 <span>&#8381;</span></p>
                     <a href="#" class="button">Купить абонемент</a>
                   </li>
-                  <li class="tab__item-card">
+                  <li class="tab__item-card" tabindex="0">
                     <h3>Полный день</h3>
                     <p>с 8:00 до 22:00</p>
                     <p id="26000">26000 <span>&#8381;</span></p>
@@ -562,49 +566,49 @@
 
       <footer class="main-footer">
         <div class="main-footer__container container">
-          <a class="main-header__logo main-logo main-logo--disabled">
-            <svg class="main-logo" width="118" height="23" fill="#ffffff" role="img" aria-label="Фитнес центр SUPERGYM.">
+          <a class="main-footer__logo main-logo main-logo--disabled">
+            <svg class="main-logo" width="88" height="32" fill="#ffffff" role="img" aria-label="Фитнес центр SUPERGYM.">
               <use href="./img/sprite.svg#logo-main"></use>
             </svg>
           </a>
           <ul class="main-footer__nav-list">
-            <li class="main-footer__nav-item">
+            <li class="main-footer__nav-item main-footer__nav-item--services">
               <a href="#">Услуги</a>
             </li>
-            <li class="main-footer__nav-item">
-              <a href="#season-tickets">Абонементы</a>
+            <li class="main-footer__nav-item main-footer__nav-item--season-tickets">
+              <a href="#season-tickets ">Абонементы</a>
             </li>
-            <li class="main-footer__nav-item">
+            <li class="main-footer__nav-item main-footer__nav-item--sales">
               <a href="#sales">Акции</a>
             </li>
-            <li class="main-footer__nav-item">
+            <li class="main-footer__nav-item main-footer__nav-item--coaches">
               <a href="#coaches">Тренеры</a>
             </li>
-            <li class="main-footer__nav-item">
+            <li class="main-footer__nav-item main-footer__nav-item--schedule">
               <a href="#">Расписание</a>
             </li>
           </ul>
           <ul class="social">
             <li class="social__item">
               <a class="social__link" href="#">
+                <span class="visually-hidden">Мы в Вконтакте.</span>
+                <svg width="25" height="25" fill="#ffffff">
+                  <use href="./img/sprite.svg#logo-vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
                 <span class="visually-hidden">Мы в Одноклассниках.</span>
-                <svg width="12" height="7" fill="##030A1A">
+                <svg width="25" height="25" fill="#ffffff">
                   <use href="./img/sprite.svg#logo-odnoklassniki"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link" href="#">
-                <span class="visually-hidden">Мы в Дзен.</span>
-                <svg width="9" height="16" fill="##030A1A">
-                  <use href="./img/sprite.svg#logo-dzen"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="#">
-                <span class="visually-hidden">Мы в Пинтерест.</span>
-                <svg width="14" height="14" fill="##030A1A">
+                <span class="visually-hidden">Мы в Реддит.</span>
+                <svg width="25" height="25" fill="#ffffff">
                   <use href="./img/sprite.svg#logo-reddit"></use>
                 </svg>
               </a>
