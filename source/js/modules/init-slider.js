@@ -1,10 +1,11 @@
 const sliderContainer = document.querySelector('.coaches__slider-container');
+const slider = document.querySelector('.coaches__slider');
 
 sliderContainer.classList.remove('coaches__slider-container--nojs');
 
 const initSlider = new Swiper('.coaches__slider', {
   loop: true,
-  loopedSlides: 8,
+  loopedSlides: 0,
   slidesPerView: 'auto',
   slidesPerGroup: 1,
   slidesPerGroupAuto: true,
@@ -28,6 +29,12 @@ const initSlider = new Swiper('.coaches__slider', {
       spaceBetween: 40,
     },
   },
+});
+
+slider.querySelectorAll('div').forEach((el) => {
+  if (el.classList.contains('swiper-slide-duplicate')) {
+    el.querySelector('.coaches__card').setAttribute('tabindex', -1);
+  }
 });
 
 export {initSlider};

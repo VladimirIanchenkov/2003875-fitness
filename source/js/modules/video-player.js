@@ -13,6 +13,7 @@ function play() {
     'func': 'playVideo',
     'args': [],
   }), '*');
+  ytFrame.setAttribute('tabindex', 0);
   ytFrame.contentWindow.focus();
   videoButton.style.display = 'none';
   videoPlaceholder.style.display = 'none';
@@ -20,6 +21,8 @@ function play() {
 
 const initVideo = () => {
   initVideoFrame();
+  ytFrame.contentWindow.blur();
+  ytFrame.setAttribute('tabindex', -1);
   videoButton.addEventListener('click', play);
 };
 
