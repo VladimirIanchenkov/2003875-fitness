@@ -1865,6 +1865,7 @@ button,
 .intro__image {
   aspect-ratio: 500/556;
   margin-top: -23px;
+  background-color: #003d85;
 }
 
 .intro__image--tablet {
@@ -1925,6 +1926,7 @@ button,
 
 .gym__image {
   aspect-ratio: 660/401;
+  background-color: #afafaf;
 }
 
 .gym__image--tablet,
@@ -1966,6 +1968,7 @@ button,
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: rgba(20, 54, 122, 0.5019607843);
 }
 
 .gym__video-button {
@@ -2328,6 +2331,7 @@ button,
   -o-object-fit: cover;
   object-fit: cover;
   aspect-ratio: 660/500;
+  background-color: #1C3374;
 }
 
 .competition__image--tablet,
@@ -2411,6 +2415,7 @@ button,
   -o-object-fit: cover;
   object-fit: cover;
   z-index: -1;
+  background-color: #afafaf;
 }
 
 .coaches__card h3 {
@@ -2765,6 +2770,7 @@ button,
   -o-object-fit: cover;
   object-fit: cover;
   aspect-ratio: 280/462;
+  background-color: #0041ca;
 }
 
 .sales__image--tablet,
@@ -2841,6 +2847,8 @@ button,
   -o-object-fit: cover;
   object-fit: cover;
   aspect-ratio: 1/1;
+  background-color: #6c6b6b;
+  border-radius: 50%;
 }
 
 .reviews__card h3 {
@@ -2985,6 +2993,10 @@ button,
   border-bottom: 1px solid #74819c;
   margin-bottom: 30px;
   background: none;
+}
+
+.contacts__form-field input.focus-visible:focus {
+  border-color: #ffffff;
 }
 
 .contacts__form-field input:disabled {
@@ -4584,6 +4596,10 @@ button,
   .reviews__carousel-button:hover:not(.focus-visible):active,
   .reviews__carousel-button:hover:not(.focus-visible).focus-visible:active {
     color: #ed0233;
+  }
+
+  .contacts__form-field input:hover:not(.focus-visible) {
+    border-color: #ffffff;
   }
 
   .contacts__item-address a:hover:not(.focus-visible) {

@@ -90,6 +90,10 @@
   margin-bottom: 30px;
   background: none;
 
+  @include hover-focus {
+    border-color: $color-default-white;
+  }
+
   @include disabled {
     pointer-events: none;
 

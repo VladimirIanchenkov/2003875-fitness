@@ -134,6 +134,7 @@
 
 .gym__image {
   aspect-ratio: 660 / 401;
+  background-color: #afafaf;
 
   &--tablet,
   &--mobile {
@@ -212,6 +213,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: #14367a80;
 
   @include retina {
     background-image: url("../img/gym-video-poster-desktop@2x.jpg");
