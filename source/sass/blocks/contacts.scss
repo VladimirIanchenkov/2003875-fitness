@@ -10,7 +10,7 @@
 .contacts__form {
   position: relative;
   width: 50%;
-  padding: 66px 14% 64px 0;
+  padding: 66px 14% 70px 0;
 
   &::before {
     content: "";
@@ -143,7 +143,7 @@
 .contacts__address {
   position: relative;
   width: 50%;
-  padding: 59px 0 63px 11%;
+  padding: 59px 0 68px 11%;
 
   &::before {
     content: "";
@@ -276,6 +276,7 @@
 
 .contacts__item-address p,
 .contacts__item-address a {
+  display: block;
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;

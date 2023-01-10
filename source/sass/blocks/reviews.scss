@@ -67,10 +67,6 @@
   }
 }
 
-.reviews__card:nth-last-of-type(2n - 1) {
-  background-color: #ed0233;
-}
-
 .reviews__card-image-conatiner {
   grid-row: 1 / 3;
   grid-column: 1 / 2;

@@ -5,7 +5,7 @@
 
   @include vp-1199 {
     padding-top: 90px;
-    padding-bottom: 90px;
+    padding-bottom: 95px;
   }
 
   @include vp-767 {
@@ -58,7 +58,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 34px;
+    row-gap: 35px;
   }
 }
 
@@ -77,6 +77,7 @@
     background-color: #1c3374;
     color: $color-default-white;
     padding: 56px 34px;
+    justify-content: center;
     gap: unset;
 
     br {
@@ -113,11 +114,15 @@
     padding-right: 12px;
   }
 
+  &--area,
+  &--parking {
+    padding-bottom: 74px;
+  }
+
   &--comfort,
   &--expirience {
-    align-items: flex-end;
     border-top: 2px solid #d10a4233;
-    padding-top: 5px;
+    padding-top: 74px;
   }
 
   @include vp-1199 {
@@ -134,6 +139,14 @@
     &--expirience {
       align-items: flex-start;
       border: none;
+    }
+
+    &--area,
+    &--parking,
+    &--comfort,
+    &--expirience {
+      padding-top: 0;
+      padding-bottom: 0;
     }
   }
 

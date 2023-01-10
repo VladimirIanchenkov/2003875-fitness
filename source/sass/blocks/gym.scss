@@ -1,5 +1,4 @@
 .gym {
-  position: relative;
   padding-top: 120px;
   padding-bottom: 235px;
 
@@ -16,7 +15,6 @@
 
 .gym__container {
   display: flex;
-  align-items: center;
 
   @include vp-1199 {
     flex-direction: column;
@@ -25,8 +23,9 @@
 }
 
 .gym__container-inner {
-  margin-left: 5%;
+  margin-left: auto;
   margin-right: auto;
+  padding-top: 30px;
   padding-right: 16px;
   width: 33%;
 
@@ -113,22 +112,10 @@
   }
 }
 
-.gym p > br {
-  display: none;
-
-  @include vp-767 {
-    display: block;
-  }
-}
-
 .gym picture,
 .gym__image {
   @include vp-1199 {
     width: 100%;
-  }
-
-  @include vp-767 {
-    width: 100vw;
   }
 }
 
@@ -169,12 +156,24 @@
   }
 }
 
+.gym__container-visual {
+  position: relative;
+  width: 57%;
+
+  @include vp-1199 {
+    width: 100%;
+  }
+
+  @include vp-767 {
+    width: 100vw;
+  }
+}
+
 .gym__video {
   position: absolute;
   display: block;
-  bottom: 120px;
-  left: 50%;
-  transform: translateX(-10vw);
+  left: -10%;
+  transform: translateY(-50%);
   width: 364px;
   height: 228px;
 
@@ -183,11 +182,11 @@
   }
 
   @include vp-1199 {
-    width: 34%;
+    width: 39%;
+    left: 50%;
     height: auto;
-    bottom: 100px;
-    transform: translateX(-50%);
-    aspect-ratio: 266 / 167;
+    transform: translate(-50%, -50%);
+    aspect-ratio: 266 / 160;
   }
 
   @include vp-767 {
@@ -195,9 +194,9 @@
     bottom: 0;
     left: 0;
     transform: none;
-    width: 100vw;
+    width: 100%;
     height: auto;
-    aspect-ratio: 320 / 167;
+    aspect-ratio: 320 / 161;
   }
 }
 
